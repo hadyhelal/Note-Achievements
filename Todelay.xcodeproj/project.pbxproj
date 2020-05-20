@@ -16,6 +16,7 @@
 		0723D29E246702C8004D5CE1 /* CategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0723D29D246702C8004D5CE1 /* CategoryTableViewController.swift */; };
 		0727BB4D246D55C0009BDF20 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0727BB4C246D55C0009BDF20 /* Item.swift */; };
 		0727BB4F246D55CF009BDF20 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0727BB4E246D55CF009BDF20 /* Category.swift */; };
+		0727E023247339820071010F /* SwipeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0727E022247339820071010F /* SwipeTableViewController.swift */; };
 		7B909BF86AE818392C35636B /* Pods_Todelay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 082CBA0407D706A811BB6014 /* Pods_Todelay.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,7 @@
 		0723D29D246702C8004D5CE1 /* CategoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewController.swift; sourceTree = "<group>"; };
 		0727BB4C246D55C0009BDF20 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		0727BB4E246D55CF009BDF20 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		0727E022247339820071010F /* SwipeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeTableViewController.swift; sourceTree = "<group>"; };
 		082CBA0407D706A811BB6014 /* Pods_Todelay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Todelay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8197E686C79217682C28BDE0 /* Pods-Todelay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Todelay.debug.xcconfig"; path = "Target Support Files/Pods-Todelay/Pods-Todelay.debug.xcconfig"; sourceTree = "<group>"; };
 		C0781FD12DA50E31342E5327 /* Pods-Todelay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Todelay.release.xcconfig"; path = "Target Support Files/Pods-Todelay/Pods-Todelay.release.xcconfig"; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 			children = (
 				0723D29D246702C8004D5CE1 /* CategoryTableViewController.swift */,
 				0706C4A62459027000A2E929 /* TodoListViewController.swift */,
+				0727E022247339820071010F /* SwipeTableViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -250,6 +253,7 @@
 				0706C4A72459027000A2E929 /* TodoListViewController.swift in Sources */,
 				0723D29E246702C8004D5CE1 /* CategoryTableViewController.swift in Sources */,
 				0706C4A32459027000A2E929 /* AppDelegate.swift in Sources */,
+				0727E023247339820071010F /* SwipeTableViewController.swift in Sources */,
 				0727BB4D246D55C0009BDF20 /* Item.swift in Sources */,
 				0706C4A52459027000A2E929 /* SceneDelegate.swift in Sources */,
 				0727BB4F246D55CF009BDF20 /* Category.swift in Sources */,

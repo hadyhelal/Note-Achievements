@@ -8,8 +8,9 @@
 
 import UIKit
 import RealmSwift
+import SwipeCellKit
 
-class TodoListViewController: UITableViewController {
+class TodoListViewController: SwipeTableViewController {
     //var itemArray = ["Angela Yu Course" , "Learn How To learn Udemy" ,"cell3"]
 
     var todoItem : Results<Item>?
@@ -32,7 +33,7 @@ class TodoListViewController: UITableViewController {
 //              if let items = defaults.array(forKey: "TO-DO object Added") as? [Item]{
 //               itemArray = items
 //               }
-
+        tableView.rowHeight = 70.0
         print(FileManager.default.urls(for: .documentationDirectory, in: .userDomainMask))
     
     }
@@ -49,7 +50,7 @@ class TodoListViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         //let cell = UITableViewCell(style: .default, reuseIdentifier: "TodoItemCell")
        
-        let cell = tableView.dequeueReusableCell(withIdentifier: "TodoItemCell", for: indexPath)
+        let cell = super.tableView(tableView, cellForRowAt: indexPath)
 
         
         if let item = todoItem?[indexPath.row]{
@@ -122,6 +123,16 @@ class TodoListViewController: UITableViewController {
     
     func loadItem(){
         todoItem = realm.objects(Item.self)
+    }
+    override func updateModel(at indexpath: IndexPath) {
+        if let itemForDeletion = self.todoItem?[indexpath.row] {
+                  do {
+                  try realm.write
+                  {
+                  realm.delete(itemForDeletion)}
+                  }
+                  catch{ print("error whileeeeeeeee deleting Category \(error)")}
+                  }
     }
 
     
