@@ -1,6 +1,6 @@
 # Note Achievement 
-My first Complete application for tasks and to-do objects 
-I have used the following through app cycle development:
+My first Complete application for tasks and notes. 
+I have used the following functionality through app cycle development:
 - TableView 
 - Persistent storage (Core Data - Realm - propertyList )
 - UserDefault 
